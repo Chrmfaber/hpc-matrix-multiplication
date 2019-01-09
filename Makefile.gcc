@@ -1,18 +1,18 @@
 TARGET	= libmatmult.so
-LIBSRCS	= 
-LIBOBJS	=
+LIBSRCS	= matmult_nat.c
+LIBOBJS	= $(LIBSRCS:.c=.o)
 
-OPT	= -g 
+OPT	= -g
 PIC	= -fPIC
 
 CC	= gcc
 CFLAGS= $(OPT) $(PIC) $(XOPTS)
 
-SOFLAGS = -shared 
-XLIBS	= 
+SOFLAGS = -shared
+XLIBS	=
 
 $(TARGET): $(LIBOBJS)
 	$(CC) -o $@ $(SOFLAGS) $(LIBOBJS) $(XLIBS)
 
 clean:
-	@/bin/rm -f core core.* $(LIBOBJS) 
+	@/bin/rm -f core core.* $(LIBOBJS)
