@@ -1,6 +1,11 @@
+#if defined(__MACH__) && defined(__APPLE__)
+#include <Accelerate/Accelerate.h>
+#else
 #include <cblas.h>
+#endif
 
-matmult_nat(int m,int n,int k,double **A,double **B,double **C){
+void
+matmult_lib(int m,int n,int k,double **A,double **B,double **C){
   double alpha = 1.0, beta = 0.0;
 
   cblas_dgemm(CblasRowMajor, CblasNoTrans, CblasNoTrans,
