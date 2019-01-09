@@ -12,7 +12,7 @@ void matmult_blk(int m, int n, int k, double **A, double **B, double **C,
             for (e = 0; e < k; e++) {
                sum += A[i1+i2][e] * B[e][j1+j2];
             }
-            C[i1+i2][j1+j2] += sum;
+            C[i1+i2][j1+j2] = sum;
             sum = 0;
          }
       }
