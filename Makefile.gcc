@@ -1,6 +1,6 @@
 TARGET	= libmatmult.so
 <<<<<<< HEAD
-LIBSRCS	= matmult_nat.c matmult_blk.c
+LIBSRCS	= matmult_nat.c matmult_lib.c matmult_blk.c
 LIBOBJS	= $(LIBSRCS:.c=.o)
 =======
 LIBSRCS	= matmult_nat.c
