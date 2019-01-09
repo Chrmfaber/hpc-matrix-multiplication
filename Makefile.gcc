@@ -1,18 +1,18 @@
 TARGET	= libmatmult.so
-LIBSRCS	= 
-LIBOBJS	=
+LIBSRCS	= matmult_nat.c
+LIBOBJS	= matmult_nat.o
 
-OPT	= -g 
+OPT	= -g -03
 PIC	= -fPIC
 
 CC	= gcc
-CFLAGS= $(OPT) $(PIC) $(XOPTS)
+CFLAGS= $(OPT) $(PIC) $(XOPTS) -std=c99
 
-SOFLAGS = -shared 
-XLIBS	= 
+SOFLAGS = -shared
+XLIBS	= -L /usr/lib64/atlas -lsatlas
 
 $(TARGET): $(LIBOBJS)
 	$(CC) -o $@ $(SOFLAGS) $(LIBOBJS) $(XLIBS)
 
 clean:
-	@/bin/rm -f core core.* $(LIBOBJS) 
+	@/bin/rm -f core core.* $(LIBOBJS)
