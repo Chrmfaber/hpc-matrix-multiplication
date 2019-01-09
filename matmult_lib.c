@@ -1,7 +1,7 @@
 #include <cblas.h>
 
 void
-matmult_nat(int m,int n,int k,double **A,double **B,double **C){
+matmult_lib(int m,int n,int k,double **A,double **B,double **C){
   double alpha = 1.0, beta = 0.0;
 
   cblas_dgemm(CblasRowMajor, CblasNoTrans, CblasNoTrans,
