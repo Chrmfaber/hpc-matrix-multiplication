@@ -1,4 +1,9 @@
-#!/bin/sh
+#!/bin/bash
+#BSUB -q hpcintro
+#BSUB -W 2
+#BSUB -R "select[model == XeonGold6126]"
+#BSUB -n 1 -R "span[hosts=1]"
+#BSUB -B -N
 
 NMK="10 100"
 TYPE="nat lib knm kmn mnk mkn nkm nmk"
