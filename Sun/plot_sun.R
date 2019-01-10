@@ -7,8 +7,6 @@ source('Sun_O4.R')
 source('Sun_O5.R')
 source('Sun_NoOpt.R')
 
-x = c(768,12288,19712)
-
 ### BLOCK SIZE
 Sun_O1_data_blk$V5 <- as.factor(Sun_O1_data_blk$V5)
 Sun_O1_data_blk$size <- interaction( "O1", Sun_O1_data_blk$V5, sep = ":")
@@ -25,6 +23,18 @@ ggplot(data=Sun_O2_data_blk, aes(x=V1, y=V2, col=size)) + labs(x="Memory usage (
 Sun_O3_data_blk$V5 <- as.factor(Sun_O3_data_blk$V5)
 Sun_O3_data_blk$size <- interaction( "O3", Sun_O3_data_blk$V5, sep = ":")
 ggplot(data=Sun_O3_data_blk, aes(x=V1, y=V2, col=size)) + labs(x="Memory usage (kbytes)", y = "Mflop/s") +
+  geom_line()+
+  geom_point()+labs(colour = "Block size")
+
+Sun_O4_data_blk$V5 <- as.factor(Sun_O4_data_blk$V5)
+Sun_O4_data_blk$size <- interaction( "O4", Sun_O4_data_blk$V5, sep = ":")
+ggplot(data=Sun_O4_data_blk, aes(x=V1, y=V2, col=size)) + labs(x="Memory usage (kbytes)", y = "Mflop/s") +
+  geom_line()+
+  geom_point()+labs(colour = "Block size")
+
+Sun_O5_data_blk$V5 <- as.factor(Sun_O5_data_blk$V5)
+Sun_O5_data_blk$size <- interaction( "O5", Sun_O5_data_blk$V5, sep = ":")
+ggplot(data=Sun_O5_data_blk, aes(x=V1, y=V2, col=size)) + labs(x="Memory usage (kbytes)", y = "Mflop/s") +
   geom_line()+
   geom_point()+labs(colour = "Block size")
 
@@ -49,6 +59,16 @@ ggplot(data=Sun_O2_data_loop, aes(x=V1, y=V2, col=loop)) + labs(x="Memory usage 
 
 Sun_O3_data_loop$loop <- interaction( "O3", Sun_O3_data_loop$TYPE, sep = ":")
 ggplot(data=Sun_O3_data_loop, aes(x=V1, y=V2, col=loop)) + labs(x="Memory usage (kbytes)", y = "Mflop/s") +
+  geom_line()+
+  geom_point()+labs(colour = "Loop order")
+
+Sun_O4_data_loop$loop <- interaction( "O4", Sun_O4_data_loop$TYPE, sep = ":")
+ggplot(data=Sun_O4_data_loop, aes(x=V1, y=V2, col=loop)) + labs(x="Memory usage (kbytes)", y = "Mflop/s") +
+  geom_line()+
+  geom_point()+labs(colour = "Loop order")
+
+Sun_O5_data_loop$loop <- interaction( "O5", Sun_O5_data_loop$TYPE, sep = ":")
+ggplot(data=Sun_O5_data_loop, aes(x=V1, y=V2, col=loop)) + labs(x="Memory usage (kbytes)", y = "Mflop/s") +
   geom_line()+
   geom_point()+labs(colour = "Loop order")
 
