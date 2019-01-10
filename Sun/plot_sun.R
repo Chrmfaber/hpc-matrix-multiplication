@@ -94,6 +94,16 @@ ggplot(data=Sun_O3_data_lib_nat, aes(x=V1, y=V2, col=basic)) + labs(x="Memory us
   geom_line()+
   geom_point()+labs(colour = "")
 
+Sun_O4_data_lib_nat$basic <- interaction( "O4", Sun_O4_data_lib_nat$TYPE, sep = ":")
+ggplot(data=Sun_O4_data_lib_nat, aes(x=V1, y=V2, col=basic)) + labs(x="Memory usage (kbytes)", y = "Mflop/s") +
+  geom_line()+
+  geom_point()+labs(colour = "")
+
+Sun_O5_data_lib_nat$basic <- interaction( "O5", Sun_O5_data_lib_nat$TYPE, sep = ":")
+ggplot(data=Sun_O5_data_lib_nat, aes(x=V1, y=V2, col=basic)) + labs(x="Memory usage (kbytes)", y = "Mflop/s") +
+  geom_line()+
+  geom_point()+labs(colour = "")
+
 Sun_NoOpt_data_lib_nat$basic <- interaction( "NoOpt", Sun_NoOpt_data_lib_nat$TYPE, sep = ":")
 ggplot(data=Sun_NoOpt_data_lib_nat, aes(x=V1, y=V2, col=basic)) + labs(x="Memory usage (kbytes)", y = "Mflop/s") +
   geom_line()+
