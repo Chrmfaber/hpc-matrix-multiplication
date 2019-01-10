@@ -1,16 +1,21 @@
 #!/bin/sh
+#BSUB -q hpcintro
+#BSUB -W 15
+#BSUB -R "select[model == XeonGold6126]"
+#BSUB -n 1 -R "span[host=1]"
+#BSUB -B -N
 
-NMK="10 40 70 100 150 200 250 300"
+NMK="10 20 30 40 50 100 200 300 400 500 1000 2000 3000 4000 5000 10000"
 TYPE="nat lib knm kmn mnk mkn nkm nmk"
 LOGEXT=dat
-/bin/rm -f O3nat.$LOGEXT O3lib.$LOGEXT O3knm.$LOGEXT O3kmn.$LOGEXT O3mnk.$LOGEXT O3mkn.$LOGEXT O3nkm.$LOGEXT O3nmk.$LOGEXT
+/bin/rm -f TestO3nat.$LOGEXT
 
 for TTT in $TYPE
-echo "Calculating with type: $TTT"
 do
 for values in $NMK
 do
-    ./matmult_c.gcc $TTT $values $values $values | grep -v CPU >> O3$TTT.$LOGEXT
+    ./matmult_c.gcc $TTT $values $values $values | grep -v CPU >> TestO3$TTT.$LOGEXT
+echo "Done with NMK: $values"
 done
 echo "Done with type: $TTT"
 done
