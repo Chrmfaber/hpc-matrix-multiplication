@@ -1,0 +1,5 @@
+### Start Thu Jan 10 16:23:04 2019
+# /opt/oracle/developerstudio12.6/bin/../bin/er_archive -n -O /zhome/8b/e/98001/Desktop/Git/Assignment1/hpc-matrix-multiplication/test.2.er/_f3.er/er_archive.log /zhome/8b/e/98001/Desktop/Git/Assignment1/hpc-matrix-multiplication/test.2.er/_f3.er
+Copying `/usr/bin/bash'  to `/zhome/8b/e/98001/Desktop/Git/Assignment1/hpc-matrix-multiplication/test.2.er/archives/bash_UHyILZt997d'
+Copying `/usr/lib64/gconv/ISO8859-1.so'  to `/zhome/8b/e/98001/Desktop/Git/Assignment1/hpc-matrix-multiplication/test.2.er/archives/ISO8859-1.so_bUGyM4jHBK8'
+Copying `/usr/lib64/libtinfo.so.5.9'  to `/zhome/8b/e/98001/Desktop/Git/Assignment1/hpc-matrix-multiplication/test.2.er/archives/libtinfo.so.5.9_OCEC1bthLm2'
