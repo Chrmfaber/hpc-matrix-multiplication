@@ -21,6 +21,7 @@ void matmult_blk(int m, int n, int k, double **A, double **B, double **C,
 void matmult_blk2(int m, int n, int k, double **A, double **B, double **C,
                   int bs) {
   int i1, i2, j1, j2, e;
+  printf("Using blk2\n", );
 
   for (i1 = 0; i1 < m; i1 += bs) {
     for (j1 = 0; j1 < n; j1 += bs) {
