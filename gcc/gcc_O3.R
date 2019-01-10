@@ -22,7 +22,7 @@ gcc_O3_data_loop <- rbind(gcc_O3_kmn,gcc_O3_knm,gcc_O3_mkn,gcc_O3_mnk,gcc_O3_nkm
 gcc_O3_data_loop <- gcc_O3_data_loop[c(1:2,5)]
 gcc_O3_data_lib_nat <- rbind(gcc_O3_lib,gcc_O3_nat)
 gcc_O3_data_lib_nat <- gcc_O3_data_lib_nat[c(1:2,5)]
-gcc_O3_data_blk <- gcc_O3_blk[c(1:2,5)]
+gcc_O3_data_blk <- gcc_O3_blk[c(1:2,5:6)]
 
 library(gdata)
 keep(gcc_O3_data_blk,gcc_O3_data_lib_nat,gcc_O3_data_loop,sure=TRUE)

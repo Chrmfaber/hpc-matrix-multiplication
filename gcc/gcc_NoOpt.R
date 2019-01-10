@@ -22,7 +22,7 @@ gcc_NoOpt_data_loop <- rbind(gcc_NoOpt_kmn,gcc_NoOpt_knm,gcc_NoOpt_mkn,gcc_NoOpt
 gcc_NoOpt_data_loop <- gcc_NoOpt_data_loop[c(1:2,5)]
 gcc_NoOpt_data_lib_nat <- rbind(gcc_NoOpt_lib,gcc_NoOpt_nat)
 gcc_NoOpt_data_lib_nat <- gcc_NoOpt_data_lib_nat[c(1:2,5)]
-gcc_NoOpt_data_blk <- gcc_NoOpt_blk[c(1:2,5)]
+gcc_NoOpt_data_blk <- gcc_NoOpt_blk[c(1:2,5:6)]
 
 library(gdata)
 keep(gcc_NoOpt_data_blk,gcc_NoOpt_data_lib_nat,gcc_NoOpt_data_loop,sure=TRUE)

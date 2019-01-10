@@ -22,7 +22,7 @@ gcc_O2_data_loop <- rbind(gcc_O2_kmn,gcc_O2_knm,gcc_O2_mkn,gcc_O2_mnk,gcc_O2_nkm
 gcc_O2_data_loop <- gcc_O2_data_loop[c(1:2,5)]
 gcc_O2_data_lib_nat <- rbind(gcc_O2_lib,gcc_O2_nat)
 gcc_O2_data_lib_nat <- gcc_O2_data_lib_nat[c(1:2,5)]
-gcc_O2_data_blk <- gcc_O2_blk[c(1:2,5)]
+gcc_O2_data_blk <- gcc_O2_blk[c(1:2,5:6)]
 
 library(gdata)
 keep(gcc_O2_data_blk,gcc_O2_data_lib_nat,gcc_O2_data_loop,sure=TRUE)
