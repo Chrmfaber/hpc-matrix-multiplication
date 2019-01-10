@@ -5,8 +5,11 @@ source('gcc_O2.R')
 source('gcc_O3.R')
 source('gcc_NoOpt.R')
 
-# Line plot with multiple groups
-ggplot(data=gcc_O1_data_lib_nat, aes(x=V1, y=V2, col=TYPE)) + labs(x="Memory usage (kbytes)", y = "Mflop/s") +
-  geom_line()+
-  geom_point()
 
+
+# Line plot with multiple groups
+
+gcc_O1_data_blk$V5 <- as.factor(gcc_O1_data_blk$V5)
+ggplot(data=gcc_O1_data_blk, aes(x=V1, y=V2, col=V5)) + labs(x="Memory usage (kbytes)", y = "Mflop/s") +
+  geom_line()+
+  geom_point()+labs(colour = "Block size")
