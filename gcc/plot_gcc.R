@@ -53,3 +53,24 @@ ggplot(data=gcc_NoOpt_data_loop, aes(x=V1, y=V2, col=loop)) + labs(x="Memory usa
   geom_line()+
   geom_point()+labs(colour = "Loop order")
 
+##LIB NAT
+
+gcc_O1_data_lib_nat$basic <- interaction( "O1", gcc_O1_data_lib_nat$TYPE, sep = ":")
+ggplot(data=gcc_O1_data_lib_nat, aes(x=V1, y=V2, col=basic)) + labs(x="Memory usage (kbytes)", y = "Mflop/s") +
+  geom_line()+
+  geom_point()+labs(colour = "")
+
+gcc_O2_data_lib_nat$basic <- interaction( "O2", gcc_O2_data_lib_nat$TYPE, sep = ":")
+ggplot(data=gcc_O2_data_lib_nat, aes(x=V1, y=V2, col=basic)) + labs(x="Memory usage (kbytes)", y = "Mflop/s") +
+  geom_line()+
+  geom_point()+labs(colour = "")
+
+gcc_O3_data_lib_nat$basic <- interaction( "O3", gcc_O3_data_lib_nat$TYPE, sep = ":")
+ggplot(data=gcc_O3_data_lib_nat, aes(x=V1, y=V2, col=basic)) + labs(x="Memory usage (kbytes)", y = "Mflop/s") +
+  geom_line()+
+  geom_point()+labs(colour = "")
+
+gcc_NoOpt_data_lib_nat$basic <- interaction( "NoOpt", gcc_NoOpt_data_lib_nat$TYPE, sep = ":")
+ggplot(data=gcc_NoOpt_data_lib_nat, aes(x=V1, y=V2, col=basic)) + labs(x="Memory usage (kbytes)", y = "Mflop/s") +
+  geom_line()+
+  geom_point()+labs(colour = "")
