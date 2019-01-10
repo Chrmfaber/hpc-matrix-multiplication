@@ -15,7 +15,7 @@ for TTT in $TYPE
 do
 for values in $NMK
 do
-    ./matmult_c.gcc $TTT $values $values $values | grep -v CPU >> O3$TTT.$LOGEXT
+    ./matmult_c.gcc $TTT $values $values $values | grep -v CPU >> Data/O3$TTT.$LOGEXT
 done
 echo "Done with type: $TTT"
 done
