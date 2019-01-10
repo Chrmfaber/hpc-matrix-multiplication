@@ -1,8 +1,8 @@
 TARGET	= libmatmult.so
-LIBSRCS	=
-LIBOBJS	=
+LIBSRCS	= matmult_nat.c matmult_lib.c matmult_blk.c matmult_knm.c matmult_kmn.c matmult_nmk.c matmult_nkm.c matmult_mkn.c matmult_mnk.c
+LIBOBJS	= $(LIBSRCS:.c=.o)
 
-OPT	= -g -fast -xrestrict -xunroll=n unrolls loops -xprefetch -fns=yes -fsimple=2
+OPT	= -g -fast -xrestrict=%all -xunroll=64 -xprefetch -fns=yes -fsimple=2
 PIC	= -fPIC
 
 CC	= suncc

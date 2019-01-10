@@ -3,8 +3,8 @@ LIBSRCS	= matmult_nat.c matmult_lib.c matmult_blk.c matmult_knm.c matmult_kmn.c 
 LIBOBJS	= $(LIBSRCS:.c=.o)
 
 
-OPT	= -g -O3 -xprefetch -funroll-loops --params max-unroll-times=n -fns=yes -fsimple=2
-#OPT	= -g -Ofast -xprefetch -funroll-loops --params max-unroll-times=n -fns=yes -fsimple=2
+#OPT	= -g -O3 -fprefetch-loop-arrays -funroll-loops
+OPT	= -g -Ofast -fprefetch-loop-arrays -funroll-loops
 PIC	= -fPIC
 
 CC	= gcc
