@@ -10,11 +10,11 @@ for TTT in $TYPE
 do
 for values in $NMK
 do
-if [[ "$TTT" = "blk" ]] 
+if [[ "$TTT" = "blk" ]]
   then
   for size in $BS
-  echo "Testing for BLK with knm = $values and bs = $size now."
   do
+   echo "Testing for BLK with knm = $values and bs = $size now."
     ./matmult_c.gcc $TTT $values $values $values $size| grep -v CPU >> O3$TTT.$LOGEXT.wisse
   done
 else

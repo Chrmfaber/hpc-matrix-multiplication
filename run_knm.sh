@@ -5,7 +5,12 @@
 #BSUB -n 1 -R "span[host=1]"
 #BSUB -B -N
 
+<<<<<<< HEAD
 NMK="10 20 30 40 50 100 200 300 400 500 1000 2000 3000 4000 5000 10000"
+=======
+NMK="10 40 70 100 150 200 250 300"
+
+>>>>>>> 6d3974a298df7adac83257698eb5bb801d6bdb5d
 TYPE="nat lib knm kmn mnk mkn nkm nmk"
 LOGEXT=dat
 /bin/rm -f TestO3nat.$LOGEXT

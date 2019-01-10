@@ -1,0 +1,25 @@
+
+gcc
+no optimization
+GNU C 4.8.5 20150623 (Red Hat 4.8.5-28) -mtune=generic -march=x86-64 -g -std=c99 -fPIC
+O1
+GNU C 4.8.5 20150623 (Red Hat 4.8.5-28) -mtune=generic -march=x86-64 -g -O1 -std=c99 -fPIC
+O2
+GNU C 4.8.5 20150623 (Red Hat 4.8.5-28) -mtune=generic -march=x86-64 -g -O2 -std=c99 -fPIC
+O3
+GNU C 4.8.5 20150623 (Red hat 4.8.8.5-28) -mtune=generic -march=x86-64 -g -O3 -std=c99 -fPIC
+
+
+suncc
+no optimization
+DW_AT_producer "DBG_GEN 5.7.6" DW_AT_SUN_command_line "/opt/oracle/developerstudio12.6/bin/cc -g -fPIC -c matmult_nat.c -WO,-xp.XAKIOHBxIoNcE1w."
+O1
+DW_AT_producer "DBG_GEN 5.7.6" DW_AT_SUN_command_line "/opt/oracle/developerstudio12.6/bin/cc -g -xO1 -fPIC -c matmult_nat.c -WO,-xp.XAKIOHBxIoNcE1w."
+O2
+DW_AT_producer "DBG_GEN 5.7.6" DW_AT_SUN_command_line "/opt/oracle/developerstudio12.6/bin/cc -g -xO2 -fPIC -c matmult_nat.c -WO,-xp.XAKIOHBxIoNcE1w."
+O3
+DW_AT_producer "DBG_GEN 5.7.6" DW_AT_SUN_command_line "/opt/oracle/developerstudio12.6/bin/cc -g -xO3 -fPIC -c matmult_nat.c -WO,-xp.XAKIOHBxIoNcE1w."
+O4
+DW_AT_producer "DBG_GEN 5.7.6" DW_AT_SUN_command_line "/opt/oracle/developerstudio12.6/bin/cc -g -xO4 -fPIC -c matmult_nat.c -WO,-xp.XAKIOHBxIoNcE1w."
+O5
+DW_AT_producer "DBG_GEN 5.7.6" DW_AT_SUN_command_line "/opt/oracle/developerstudio12.6/bin/cc -g -xO5 -fPIC -c matmult_nat.c -WO,-xp.XAKIOHBxIoNcE1w."
