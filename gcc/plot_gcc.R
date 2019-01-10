@@ -6,9 +6,6 @@ source('gcc_O3.R')
 source('gcc_NoOpt.R')
 
 
-
-# Line plot with multiple groups
-
 gcc_O1_data_blk$V5 <- as.factor(gcc_O1_data_blk$V5)
 gcc_O1_data_blk$size <- interaction( "O1", gcc_O1_data_blk$V5, sep = ":")
 ggplot(data=gcc_O1_data_blk, aes(x=V1, y=V2, col=size)) + labs(x="Memory usage (kbytes)", y = "Mflop/s") +
@@ -16,3 +13,20 @@ ggplot(data=gcc_O1_data_blk, aes(x=V1, y=V2, col=size)) + labs(x="Memory usage (
   geom_point()+labs(colour = "Block size")
 
 
+gcc_O2_data_blk$V5 <- as.factor(gcc_O2_data_blk$V5)
+gcc_O2_data_blk$size <- interaction( "O2", gcc_O2_data_blk$V5, sep = ":")
+ggplot(data=gcc_O2_data_blk, aes(x=V1, y=V2, col=size)) + labs(x="Memory usage (kbytes)", y = "Mflop/s") +
+  geom_line()+
+  geom_point()+labs(colour = "Block size")
+
+gcc_O3_data_blk$V5 <- as.factor(gcc_O3_data_blk$V5)
+gcc_O3_data_blk$size <- interaction( "O3", gcc_O3_data_blk$V5, sep = ":")
+ggplot(data=gcc_O3_data_blk, aes(x=V1, y=V2, col=size)) + labs(x="Memory usage (kbytes)", y = "Mflop/s") +
+  geom_line()+
+  geom_point()+labs(colour = "Block size")
+
+gcc_NoOpt_data_blk$V5 <- as.factor(gcc_NoOpt_data_blk$V5)
+gcc_NoOpt_data_blk$size <- interaction( "NoOpt", gcc_NoOpt_data_blk$V5, sep = ":")
+ggplot(data=gcc_NoOpt_data_blk, aes(x=V1, y=V2, col=size)) + labs(x="Memory usage (kbytes)", y = "Mflop/s") +
+  geom_line()+
+  geom_point()+labs(colour = "Block size")
