@@ -21,7 +21,7 @@
 //   }
 // }
 
-void matmult_blk(int m, int n, int k, double **A, double **B, double **C,
+void matmult_blk(int m, int n, int k, double ** __restricted A, double ** __restricted B, double ** __restricted C,
                  int bs) {
   int i, i1, i2, j, j1, j2, e1, e2;
   // Initializing C with 0s

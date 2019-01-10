@@ -1,5 +1,5 @@
 
-void matmult_mkn(int m, int n, int k, double **A, double **B, double **C) {
+void matmult_mkn(int m, int n, int k, double ** __restricted A, double ** __restricted B, double ** __restricted C) {
   int c, d, e;
 
   for (d = 0; d < n; d++) {
