@@ -1,18 +1,18 @@
 TARGET	= libmatmult.so
-LIBSRCS	= 
-LIBOBJS	= 
+LIBSRCS	=
+LIBOBJS	=
 
-OPT	= -g 
+OPT	= -g -fast -xrestrict -xunroll=n unrolls loops -xprefetch -fns=yes -fsimple=2
 PIC	= -fPIC
 
 CC	= suncc
 CFLAGS= $(OPT) $(PIC) $(XOPTS)
 
-SOFLAGS = -shared 
-XLIBS	= 
+SOFLAGS = -shared
+XLIBS	=
 
 $(TARGET): $(LIBOBJS)
 	$(CC) -o $@ $(SOFLAGS) $(LIBOBJS) $(XLIBS)
 
 clean:
-	@/bin/rm -f core core.* $(LIBOBJS) 
+	@/bin/rm -f core core.* $(LIBOBJS)
