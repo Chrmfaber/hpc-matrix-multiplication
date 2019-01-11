@@ -1,8 +1,6 @@
 blocking_dataFixed <- read.table("~/Google Drive/10.semester/02614 HPC/mkn_3way_order_blocking_smaller_block_sizesblk.dat", quote="\"", comment.char="")
 dat <- blocking_dataFixed[c(1:2,5)]
 str(dat)
-dat$V1 <- as.numeric(dat$V1)
-dat$V2 <- as.numeric(dat$V2)
 
 dat <- dat[order(dat$V1),]
 dat$V1 <- as.factor(dat$V1)
