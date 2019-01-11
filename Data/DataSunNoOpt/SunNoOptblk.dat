@@ -1,0 +1,181 @@
+     2.344    341.491 # matmult_blk 2
+     2.344    343.244 # matmult_blk 4
+     2.344    350.878 # matmult_blk 8
+     2.344    309.439 # matmult_blk 12
+     2.344    347.341 # matmult_blk 16
+     2.344    346.545 # matmult_blk 24
+     2.344    343.155 # matmult_blk 32
+     2.344    346.551 # matmult_blk 64
+     2.344    346.989 # matmult_blk 128
+     2.344    346.592 # matmult_blk 192
+     2.344    347.279 # matmult_blk 256
+    58.594    413.513 # matmult_blk 2
+    58.594    416.800 # matmult_blk 4
+    58.594    419.520 # matmult_blk 8
+    58.594    421.435 # matmult_blk 12
+    58.594    421.277 # matmult_blk 16
+    58.594    422.259 # matmult_blk 24
+    58.594    422.559 # matmult_blk 32
+    58.594    422.738 # matmult_blk 64
+    58.594    422.986 # matmult_blk 128
+    58.594    423.302 # matmult_blk 192
+    58.594    423.187 # matmult_blk 256
+   234.375    405.457 # matmult_blk 2
+   234.375    412.805 # matmult_blk 4
+   234.375    415.340 # matmult_blk 8
+   234.375    415.386 # matmult_blk 12
+   234.375    415.616 # matmult_blk 16
+   234.375    414.198 # matmult_blk 24
+   234.375    412.732 # matmult_blk 32
+   234.375    412.804 # matmult_blk 64
+   234.375    413.305 # matmult_blk 128
+   234.375    414.057 # matmult_blk 192
+   234.375    413.354 # matmult_blk 256
+   937.500    394.823 # matmult_blk 2
+   937.500    392.896 # matmult_blk 4
+   937.500    394.060 # matmult_blk 8
+   937.500    394.288 # matmult_blk 12
+   937.500    393.644 # matmult_blk 16
+   937.500    393.875 # matmult_blk 24
+   937.500    394.584 # matmult_blk 32
+   937.500    395.430 # matmult_blk 64
+   937.500    396.469 # matmult_blk 128
+   937.500    395.788 # matmult_blk 192
+   937.500    398.047 # matmult_blk 256
+  3750.000    323.540 # matmult_blk 2
+  3750.000    325.321 # matmult_blk 4
+  3750.000    326.221 # matmult_blk 8
+  3750.000    328.235 # matmult_blk 12
+  3750.000    330.877 # matmult_blk 16
+  3750.000    334.699 # matmult_blk 24
+  3750.000    336.112 # matmult_blk 32
+  3750.000    339.141 # matmult_blk 64
+  3750.000    339.741 # matmult_blk 128
+  3750.000    334.695 # matmult_blk 192
+  3750.000    332.034 # matmult_blk 256
+  8437.500    256.779 # matmult_blk 2
+  8437.500    290.859 # matmult_blk 4
+  8437.500    313.175 # matmult_blk 8
+  8437.500    321.152 # matmult_blk 12
+  8437.500    325.786 # matmult_blk 16
+  8437.500    330.457 # matmult_blk 24
+  8437.500    332.340 # matmult_blk 32
+  8437.500    335.852 # matmult_blk 64
+  8437.500    357.728 # matmult_blk 128
+  8437.500    318.174 # matmult_blk 192
+  8437.500    334.687 # matmult_blk 256
+ 15000.000    260.824 # matmult_blk 2
+ 15000.000    315.024 # matmult_blk 4
+ 15000.000    326.866 # matmult_blk 8
+ 15000.000    336.330 # matmult_blk 12
+ 15000.000    358.761 # matmult_blk 16
+ 15000.000    364.454 # matmult_blk 24
+ 15000.000    367.741 # matmult_blk 32
+ 15000.000    351.181 # matmult_blk 64
+ 15000.000    362.533 # matmult_blk 128
+ 15000.000    334.977 # matmult_blk 192
+ 15000.000    310.736 # matmult_blk 256
+ 23437.500    270.465 # matmult_blk 2
+ 23437.500    315.726 # matmult_blk 4
+ 23437.500    344.059 # matmult_blk 8
+ 23437.500    354.418 # matmult_blk 12
+ 23437.500    359.888 # matmult_blk 16
+ 23437.500    365.798 # matmult_blk 24
+ 23437.500    368.267 # matmult_blk 32
+ 23437.500    371.633 # matmult_blk 64
+ 23437.500    344.317 # matmult_blk 128
+ 23437.500    330.728 # matmult_blk 192
+ 23437.500    321.230 # matmult_blk 256
+ 33750.000    280.005 # matmult_blk 2
+ 33750.000    323.468 # matmult_blk 4
+ 33750.000    351.260 # matmult_blk 8
+ 33750.000    352.348 # matmult_blk 12
+ 33750.000    357.640 # matmult_blk 16
+ 33750.000    372.188 # matmult_blk 24
+ 33750.000    365.681 # matmult_blk 32
+ 33750.000    376.391 # matmult_blk 64
+ 33750.000    337.725 # matmult_blk 128
+ 33750.000    317.752 # matmult_blk 192
+ 33750.000    263.012 # matmult_blk 256
+ 45937.500    272.232 # matmult_blk 2
+ 45937.500    322.820 # matmult_blk 4
+ 45937.500    351.433 # matmult_blk 8
+ 45937.500    362.084 # matmult_blk 12
+ 45937.500    367.882 # matmult_blk 16
+ 45937.500    366.383 # matmult_blk 24
+ 45937.500    369.018 # matmult_blk 32
+ 45937.500    368.639 # matmult_blk 64
+ 45937.500    325.235 # matmult_blk 128
+ 45937.500    287.256 # matmult_blk 192
+ 45937.500    238.609 # matmult_blk 256
+ 60000.000    274.334 # matmult_blk 2
+ 60000.000    312.787 # matmult_blk 4
+ 60000.000    340.516 # matmult_blk 8
+ 60000.000    350.872 # matmult_blk 12
+ 60000.000    354.663 # matmult_blk 16
+ 60000.000    360.493 # matmult_blk 24
+ 60000.000    361.322 # matmult_blk 32
+ 60000.000    349.153 # matmult_blk 64
+ 60000.000    312.266 # matmult_blk 128
+ 60000.000    270.547 # matmult_blk 192
+ 60000.000    233.600 # matmult_blk 256
+ 75937.500    271.872 # matmult_blk 2
+ 75937.500    318.366 # matmult_blk 4
+ 75937.500    352.903 # matmult_blk 8
+ 75937.500    358.999 # matmult_blk 12
+ 75937.500    364.869 # matmult_blk 16
+ 75937.500    371.141 # matmult_blk 24
+ 75937.500    378.691 # matmult_blk 32
+ 75937.500    355.097 # matmult_blk 64
+ 75937.500    306.046 # matmult_blk 128
+ 75937.500    244.309 # matmult_blk 192
+ 75937.500    224.109 # matmult_blk 256
+ 93750.000    273.979 # matmult_blk 2
+ 93750.000    320.728 # matmult_blk 4
+ 93750.000    349.793 # matmult_blk 8
+ 93750.000    360.376 # matmult_blk 12
+ 93750.000    370.134 # matmult_blk 16
+ 93750.000    375.875 # matmult_blk 24
+ 93750.000    371.629 # matmult_blk 32
+ 93750.000    339.173 # matmult_blk 64
+ 93750.000    290.034 # matmult_blk 128
+ 93750.000    222.064 # matmult_blk 192
+ 93750.000    224.360 # matmult_blk 256
+146484.375    257.945 # matmult_blk 2
+146484.375    310.162 # matmult_blk 4
+146484.375    343.850 # matmult_blk 8
+146484.375    360.026 # matmult_blk 12
+146484.375    366.208 # matmult_blk 16
+146484.375    372.101 # matmult_blk 24
+146484.375    374.220 # matmult_blk 32
+146484.375    312.863 # matmult_blk 64
+146484.375    196.697 # matmult_blk 128
+146484.375    201.604 # matmult_blk 192
+146484.375    204.600 # matmult_blk 256
+210937.500    285.336 # matmult_blk 2
+210937.500    333.569 # matmult_blk 4
+210937.500    365.740 # matmult_blk 8
+210937.500    381.334 # matmult_blk 12
+210937.500    386.924 # matmult_blk 16
+210937.500    391.910 # matmult_blk 24
+210937.500    378.531 # matmult_blk 32
+210937.500    352.202 # matmult_blk 64
+210937.500    356.738 # matmult_blk 128
+210937.500    357.639 # matmult_blk 192
+210937.500    356.745 # matmult_blk 256
+287109.375    254.980 # matmult_blk 2
+287109.375    309.931 # matmult_blk 4
+287109.375    345.472 # matmult_blk 8
+287109.375    331.288 # matmult_blk 12
+287109.375    323.662 # matmult_blk 16
+287109.375    324.629 # matmult_blk 24
+287109.375    320.403 # matmult_blk 32
+287109.375    323.182 # matmult_blk 64
+287109.375    328.276 # matmult_blk 128
+287109.375    328.166 # matmult_blk 192
+287109.375    319.142 # matmult_blk 256
+375000.000    161.461 # matmult_blk 2
+375000.000    177.704 # matmult_blk 4
+375000.000    186.839 # matmult_blk 8
+375000.000    190.067 # matmult_blk 12
+375000.000    191.320 # matmult_blk 16
